@@ -1,0 +1,2 @@
+Permet de voir comment s'articule l'inclusion des fichiers dans 
+un script PHP suivant l'arborescence de dossiers

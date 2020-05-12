@@ -1,0 +1,7 @@
++ Site internet du restaurant la Bohème
++ Organisation des fichiers du site (une bonne organisation permet de se retrouver plus facilement)
+    + les fichiers qui traitent les données ne sont pas à la même place que les fichiers "graphiques" 
+      comme les fichiers (HTML, JS, CSS...)
+    + nous avons ici 2 templates (mais un seul est visible dans notre navigateur, le choix
+	  du template visible est configuré via le fichier config.php)
++ Dans un gabarit, comment créer un chemin vers une ressource (vers un fichier js, css, image)

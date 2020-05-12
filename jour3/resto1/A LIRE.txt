@@ -1,0 +1,4 @@
++ Site internet du restaurant la Bohème
++ approche de l'organisation d'un site internet en template (gabarit)
++ creation d'un fichier config.php qui est appelé sur toutes mes pages. On trouvera dans ce fichier
+  les données commnunes à l'ensemble des pages.
