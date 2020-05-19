@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title><?php echo $titre . " - " . $nom_du_resto ?></title>
-  <link rel="stylesheet" href="<?php echo $_url_base . $_dossier_template ?>css/mes_styles.css" />
-</head>
-
-<body>
-
-  <header>
-    <div class="container">
-      <?php include "navigation.php" ?>
-    </div>
-  </header>
+<?php
+    include "include/head.php";
+?>
 
   <main>
     <div class="container">
@@ -29,7 +17,7 @@
     </div>
   </main>
 
-    <?php include "footer.php" ?>
 
-</body>
-</html>
+<?php
+include "include/footer.php";
+?>

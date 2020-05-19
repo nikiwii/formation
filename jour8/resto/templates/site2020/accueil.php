@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title><?php echo $nom_du_resto ?> - ACCUEIL</title>
-    <link rel="stylesheet" href="<?php echo $_url_base . $_dossier_template ?>css/mes_styles.css" />
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <?php include "navigation.php" ?>
-    </div>
-  </header>
+<?php include "include/head.php" ?>
 
   <main>
         <div class="container">
@@ -23,7 +10,5 @@
         <div>
   </main>
 
-  <?php include "footer.php" ?>
+  <?php include "include/footer.php" ?>
 
-</body>
-</html>
