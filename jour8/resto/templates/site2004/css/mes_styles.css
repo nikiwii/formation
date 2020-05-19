@@ -1,0 +1,63 @@
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin:auto;
+}
+
+
+
+h1 {
+  background:#CC00CC;
+  color:#fff;
+  padding: 1em;
+  font-size: 40px;
+}
+
+main p{
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+footer {
+  background:#ccc;
+  padding: 10px;
+  text-align: center;
+  margin-top:30px;
+  background:#CC00CC;
+}
+
+
+.row:after {
+  content : ' ';
+  float:none;
+  display: block;
+  clear: both;
+  margin-top:20px;
+}
+
+.majuscule {
+  text-transform: uppercase;
+}
+
+nav a {
+  color:#000;
+  font-weight: bold;
+}
+
+
+aside {
+  float: left;
+  background:#CC00CC;
+  padding-right: 40px;
+  width: 15%;
+}
+
+main {
+  float: left;
+  margin-left: 20px;
+  width: 70%;
+}
+
+main h2 {
+  margin: 0;
+}

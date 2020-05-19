@@ -1,0 +1,3 @@
+<?php
+
+// fichier de configuration
