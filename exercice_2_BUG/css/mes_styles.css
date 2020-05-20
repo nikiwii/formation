@@ -1,0 +1,49 @@
+main {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    border:2px #aaaaaa solid;
+    padding: 30px;
+}
+
+h1 {
+    margin: 0 0 1em 0;
+    font-family: 'Bad Script', cursive;
+}
+
+.intro {
+    font-family: Arial, sans-serif;
+    font-size:12px;
+    line-height: 25px;
+
+}
+
+.poesie h2 {
+    font-family: 'Bad Script', cursive;
+}
+
+.poesie {
+    border:2px salmon dotted;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.auteur {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.auteur span {
+    text-transform: capitalize;
+}
+
+
+footer {
+    background: pink;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}

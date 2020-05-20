@@ -43,6 +43,11 @@
         <h2>Communiquer avec le serveur</h2>
         <br>
         <nav>
+            <h4>Les corrections 20/05</h4>
+            <a href="corrections/tablemultiplication.php">Tableau HTML avec les tables de multiplication</a>
+            <a href="corrections/tabletoul.php">Mettre un tableau PHP dans une liste UL LI</a>
+            <hr>
+
             <a href="communiquer/get.php">$_GET[]</a>
             <a href="communiquer/get_formulaire.php">Un formulaire GET (assez) complet</a>
             <hr>
@@ -54,6 +59,8 @@
             <a href="communiquer/session.php">$_SESSION[]</a>
             <hr>
             <a href="resto">Notre resto</a>
+            <br>
+            <a href="resto_contenu">Notre resto (modifié en cours)</a>
         </nav>
     </div>
 
