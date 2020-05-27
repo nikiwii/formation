@@ -1,0 +1,91 @@
+body {
+    font-family: "Arial",  sans-serif;
+}
+
+form {
+    border: 1px #ccc solid;
+    padding: 30px;
+    background: #dddddd;
+    width: 60%;
+    margin: auto;
+
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form div  {
+    font-size: 1.5em;
+}
+
+form div label{
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+}
+
+form div input,
+form div select{
+    font-size: 1em;
+}
+
+.part-valider {
+    border-top: 2px #ccc solid;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.part-valider button{
+    font-size: 1em;
+}
+
+table {
+    width: 50%;
+    border: #aaaaaa 1px solid;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0,0,0,0.05);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255,255,255,0.2);
+}
+
+table td {
+    border: #aaaaaa 1px solid;
+    padding: 5px;
+}
+
+.showme {
+    border:3px #774972 solid;
+
+}
+
+.showme .title {
+    border-bottom:3px #774972 solid;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.showme .content {
+    padding: 20px 0;
+    background-color: antiquewhite;
+}
+
+.erreur {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.champ_erreur  {
+    font-weight: bold;
+    color:red;
+}
