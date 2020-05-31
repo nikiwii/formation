@@ -1,0 +1,39 @@
+h1 {
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.p {
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.p a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+small {
+    color:#c4c4c4;
+}
+
+.txt-left {
+    text-align: left;
+    padding-left: 2em;
+}
