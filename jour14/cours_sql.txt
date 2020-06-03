@@ -1,0 +1,63 @@
+
+Insérer un enregistrement dans une table
+===========================================
+
+insérer dans les colonnes prenom, nom et biographie de la table auteur
+les données 'Jean', 'Anouilh', 'auteur de théâtre...'
+
+INSERT INTO auteur
+(prenom, nom, biographie)
+VALUES
+('Jean', 'Anouilh', 'auteur de théâtre....');
+
+=======================================================
+
+INSERT INTO auteur
+(prenom, nom)
+VALUES
+('Jean-Luc', 'Lagarce');
+
+INSERT INTO auteur
+(prenom, nom)
+VALUES
+('Philippe', 'Caubère');
+
+INSERT INTO auteur
+(prenom, nom)
+VALUES
+('Pierre', 'Notte');
+
+=========================================================
+Effacer un enregistrement
+
+Effacer dans ma table auteur, l'enregistrement qui a comme id_auteur la valeur 2
+
+
+DELETE FROM auteur WHERE id_auteur = 2
+
+
+====================================================
+
+Selectionne toutes les colonnes de ma table livre
+
+SELECT * FROM `livre`
+
+=====================================
+
+selection seulement les colonnes id_livre, titre et genre de ma table livre, mais selectionne
+uniquement les lignes dont la valeur de auteur_id est 2
+
+SELECT id_livre, titre, genre FROM `livre` WHERE auteur_id = 2
+
+
+==============================================
+
+Selectionne toutes les colonnes de mes tables livre ET auteur 
+et ressort que les lignes 
+dont 	auteur.id_auteur = 2 
+et 	livre.auteur_id = 2 
+
+SELECT 	* 
+FROM 	livre, auteur
+WHERE 	auteur.id_auteur = 2
+AND	auteur.id_auteur = livre.auteur_id
