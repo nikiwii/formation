@@ -1,0 +1,132 @@
+h1 {
+    background-color: #ccc;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.p {
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.p a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+small {
+    color:#c4c4c4;
+}
+
+.txt-left {
+    text-align: left;
+    padding-left: 2em;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.row:after {
+    content: ' ';
+    display: block;
+    clear:both;
+}
+
+.col-4 {
+    float: left;
+    width: 25%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.enregistrement {
+
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8em;
+    margin:1em
+}
+
+.enregistrement td {
+    border: 1px #ccc solid;
+    text-align: center;
+}
+
+.enregistrement tr:nth-child(odd) {
+    background-color:#eee;
+}
+
+.enregistrement tr:first-child {
+    background-color:#ccc;
+    font-size: 1.2em;
+}
+
+.enregistrement .cle_primaire {
+    font-weight: bold;
+}
+
+.mini {
+    font-size: 8px;
+}
+
+.formulaire {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3em;
+    background: navajowhite;
+    padding: 1em;
+}
+
+.formulaire textarea {
+    width: 90%;
+    height: 150px;
+    font-size: 1.1em;
+    padding: 1em;
+}
+
+.resultat {
+    text-align: left;
+}
+
+.showQuery{
+    background-color: beige;
+    padding: 1em;
+}
+
+.showQuery h3{
+    margin-top: 0;
+}
+
+.error {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    color: darkred;
+}
+
+.liste_requetes table td {
+    padding: 0.5em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.liste_requetes table tr td:first-child {
+    width: 30%;
+}
