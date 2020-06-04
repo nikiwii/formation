@@ -5,6 +5,8 @@ $utilisateur = 'root';
 $motdepasse = '';
 $nomBaseDeDonnees = "formation_bibliotheque";
 
+
+
 //On établit la connexion
 $bdd = new PDO("mysql:host=$serveur;dbname=$nomBaseDeDonnees", $utilisateur, $motdepasse, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
@@ -28,6 +30,8 @@ function showTable($tableName) {
         echo "<td class='$class'>" . $colonne["Field"] . "</td>";
     }
 
+    echo "</tr>";
+
 
     foreach($arrResult as $ligneResult){
         echo "<tr>";
@@ -44,12 +48,16 @@ function showTable($tableName) {
                 $class="mini";
             }
 
+            if(is_string($ligneResult[$colonne["Field"]])) {
+                $ligneResult[$colonne["Field"]] = htmlspecialchars($ligneResult[$colonne["Field"]]);
+            }
+
             echo "<td class='$class'>" . $ligneResult[$colonne["Field"]] . "</td>";
         }
 
         echo "</tr>";
     }
-    echo "</tr>";
+
     echo "</table>";
 }
 
@@ -61,26 +69,23 @@ function showInTable($arr, $champsExclus = array()) {
 
     if(!empty($arr[0])) {
         echo "<tr>";
+
         $lesCles = array_keys($arr[0]);
         foreach($lesCles as $nomCle) {
-
             if(!in_array($nomCle, $champsExclus)) {
                 echo "<td>";
                 echo $nomCle;
                 echo "</td>";
             }
         }
-        echo "<tr>";
+
+        echo "</tr>";
 
         foreach($arr as $result) {
             echo "<tr>";
-
-
             foreach($lesCles as $nomCle) {
-
                 if(!in_array($nomCle, $champsExclus)) {
                     $class = "";
-
                     if (
                         is_string($result[$nomCle]) &&
                         strlen($result[$nomCle]) > 150
@@ -88,14 +93,16 @@ function showInTable($arr, $champsExclus = array()) {
                         $result[$nomCle] = substr($result[$nomCle], 0, 150) . "...";
                         $class = "mini";
                     }
+                    if(is_string($result[$nomCle])) {
+                        $result[$nomCle] = htmlspecialchars($result[$nomCle]);
+                    }
                     echo "<td class='$class'>";
                     echo nl2br($result[$nomCle]);
                     echo "</td>";
                 }
             }
-            echo "<tr>";
+            echo "</tr>";
         }
     }
     echo "</table>";
-
 }

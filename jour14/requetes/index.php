@@ -1,9 +1,12 @@
 <?php
-#include "config_database.php";
+# include "config_database.php";
 
 if (!empty($_POST["ma_requete"])) {
     $requeteUtilisateur = $bdd->query($_POST["ma_requete"]);
 }
+
+$nbColonnes = 2;
+
 
 ?>
 <!DOCTYPE html>
@@ -22,12 +25,13 @@ if (!empty($_POST["ma_requete"])) {
     <ul>
         <li> 1 - Créer via PhpMyAdmin une base de données "formation_bibliotheque"</li>
         <li> 2 - Importer les données qui sont dans sql/bibliotheque.sql</li>
-        <li> 3 - décommenter la ligne 2, modifier le fichier config_database comme il se doit et effacer la ligne 30.
+        <li> 3 - décommenter la ligne 2, modifier le fichier config_database comme il se doit et effacer la ligne 34.
         </li>
     </ul>
 </div>
 
-<?php exit; ?>
+
+<?php exit ?>
 
 
 <div class="txt-center p">
@@ -38,28 +42,34 @@ if (!empty($_POST["ma_requete"])) {
 
 
 <a id="goHere"></a>
-<div class="row ">
 
-    <div class="col-4">
-        livres
-        <?php showTable("livre") ?>
-    </div>
+<div class="row">
+<?php
 
-    <div class="col-4">
-        auteur
+    $i = 0;
 
-        <?php showTable("auteur") ?>
-    </div>
+    $result = $bdd -> query("Show tables");
+    $tables = $result -> fetchAll(PDO::FETCH_ASSOC);
 
-    <div class="col-4">
-        categorie
-        <?php showTable("categorie") ?>
-    </div>
 
-    <div class="col-4">
-        auteur_livre
-        <?php showTable("auteur_livre") ?>
-    </div>
+    foreach($tables as $table) {
+        if($i % $nbColonnes == 0 && $i > 0) {
+            echo "</div><div class='row'>";
+        }
+
+        $nomTable = reset($table);
+        if($nomTable != "requete") {
+            echo "<div class='col-$nbColonnes'>";
+
+
+            echo "<h3>$nomTable</h3>";
+            showTable($nomTable);
+            echo "</div>";
+        }
+        $i++;
+    }
+
+?>
 </div>
 
 

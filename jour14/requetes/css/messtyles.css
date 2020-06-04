@@ -54,6 +54,31 @@ small {
     width: 25%;
     padding: 1%;
     box-sizing: border-box;
+    overflow: auto;
+}
+
+.col-3 {
+    float: left;
+    width: 33.33333333333333%;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.col-2 {
+    float: left;
+    width: 50%;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.col-1 {
+    float: left;
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
 .enregistrement {
