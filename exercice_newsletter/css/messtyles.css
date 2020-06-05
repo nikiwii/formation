@@ -1,0 +1,19 @@
+.err {
+    color: darkred;
+    border: darkred 1px solid;
+    padding: 2em;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.bravo {
+    color: darkolivegreen;
+    border: darkolivegreen 1px solid;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+input[type=text]{
+    padding: 1em;
+}
+
