@@ -1,5 +1,5 @@
 <?php
-# include "config_database.php";
+ # include "config_database.php";
 
 if (!empty($_POST["ma_requete"])) {
     $requeteUtilisateur = $bdd->query($_POST["ma_requete"]);
@@ -31,7 +31,7 @@ $nbColonnes = 2;
 </div>
 
 
-<?php exit ?>
+<?php  exit ?>
 
 
 <div class="txt-center p">
@@ -41,7 +41,7 @@ $nbColonnes = 2;
 
 
 
-<a id="goHere"></a>
+
 
 <div class="row">
 <?php
@@ -72,7 +72,7 @@ $nbColonnes = 2;
 ?>
 </div>
 
-
+<a id="goHere"></a>
 
 <?php if(!empty($_POST["ma_requete"])) {
     echo "<div class='resultat'>";

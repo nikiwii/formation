@@ -44,7 +44,7 @@ function showTable($tableName) {
                 is_string($ligneResult[$colonne["Field"]]) &&
                 strlen($ligneResult[$colonne["Field"]]) > 70
             ){
-                $ligneResult[$colonne["Field"]] = substr( $ligneResult[$colonne["Field"]], 0 , 70) . "...";
+                $ligneResult[$colonne["Field"]] = mb_substr( $ligneResult[$colonne["Field"]], 0 , 70) . "...";
                 $class="mini";
             }
 
@@ -90,7 +90,7 @@ function showInTable($arr, $champsExclus = array()) {
                         is_string($result[$nomCle]) &&
                         strlen($result[$nomCle]) > 150
                     ) {
-                        $result[$nomCle] = substr($result[$nomCle], 0, 150) . "...";
+                        $result[$nomCle] = mb_substr($result[$nomCle], 0, 150) . "...";
                         $class = "mini";
                     }
                     if(is_string($result[$nomCle])) {
