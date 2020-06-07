@@ -1,0 +1,11 @@
+C'est un site complet fait en PHP et MySQL
+
+Vous devez créer un BDD "formation_restaurant" et y importer les données qui sont dans le dossier 
+sql/formation_restaurant.sql
+
+Ensuite, vous devez modifier le fichier config avec les bonnes informations (serveur, chemin...)
+
+pour aller sur le site, il faudra aller vers url_du_site/admin
+
+identifiant : admin
+mot de passe : admin
